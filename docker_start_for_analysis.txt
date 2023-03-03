@@ -1,0 +1,1 @@
+sudo docker run --cgroupns=host --privileged -ti     -v /tmp/results:/results     -v /var/lib/containers:/var/lib/containers     gcr.io/ossf-malware-analysis/analysis analyze     -package Django -ecosystem pypi     -upload file:///results/
